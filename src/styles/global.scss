@@ -1,0 +1,27 @@
+@use './partials/typography' as *;
+@use './partials/variables' as *;
+@use './partials/mixins' as *;
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    color: $primary;
+    font-family: "Futura";
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a,
+p,
+button,
+input,
+label{
+    font-family: "Futura";
+}
+
+
+
