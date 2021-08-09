@@ -3,13 +3,72 @@
 
 
 
-.title{
-    font-size: 80px;
-    color: white;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+// .title{
+//     font-size: 80px;
+//     color: white;
+//     height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+// }
+
+
+.main-page{
+
+    &__top{
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__middle{
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    &__bottom{
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        // flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    &__name{
+        color: $secondary;
+        text-shadow: 1px 0px 1px;
+        letter-spacing: 1.5px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    &__title{
+        color: #bdb7b7;
+        text-shadow: 1px 0px 1px;
+        letter-spacing: 2px;
+        font-size: 19px;
+    }
+    &__menu{
+        color: $secondary;
+        @include header;
+    }
+    &__divider{
+        background-color: burlywood;
+        height: 1px;
+        margin: auto 0px;
+        width: 80%;
+    }
+    &__contact{
+        color: $secondary;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
 
 }
 
