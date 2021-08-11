@@ -1,17 +1,5 @@
-@use '../styles/partials/variables' as *;
-@use '../styles/partials/mixins' as *;
-
-
-
-// .title{
-//     font-size: 80px;
-//     color: white;
-//     height: 100vh;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-
-// }
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
 
 
 .main-page{
@@ -46,9 +34,10 @@
         letter-spacing: 1.5px;
         margin-bottom: 10px;
         font-size: 12px;
+    
     }
     &__title{
-        color: #bdb7b7;
+        color: burlywood;
         text-shadow: 1px 0px 1px;
         letter-spacing: 2px;
         font-size: 19px;
@@ -64,9 +53,10 @@
         width: 80%;
     }
     &__contact{
-        color: $secondary;
+        color: burlywood;
         font-size: 12px;
         letter-spacing: 2px;
+        text-decoration: none;
     }
 
 

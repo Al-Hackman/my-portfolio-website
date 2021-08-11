@@ -1,5 +1,5 @@
 import React from 'react';
-import ParticlesBackground from '../ParticlesBackground';
+import ParticlesBackground from '../../ParticlesBackground';
 import './MainPage.scss';
 
 
@@ -24,8 +24,8 @@ function MainPage() {
             </section>
 
             <section className="main-page__bottom"> 
-                <div className="main-page__contact">GITHUB</div>
-                <div className="main-page__contact">LINKEDIN</div>
+                <a href="https://github.com/Al-Hackman" className="main-page__contact">GITHUB</a>
+                <a href="https://www.linkedin.com/in/alberthackman/" className="main-page__contact">LINKEDIN</a>
             </section>
 
         </div>

@@ -1,0 +1,29 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+
+
+.profile{
+    padding: 6rem 2rem 0px;
+    
+    &__header{
+        color: $secondary;
+        font-weight: 600;
+        font-size: 40px;
+        margin: 0px 0px 3rem;
+        letter-spacing: 1.2px;
+    }
+    &__body{
+        color: $secondary;
+        font-weight: 300;
+        margin: 0px;
+        letter-spacing: 1.2px;
+        font-size: 1.2rem;
+    }
+    &--description{
+        color: burlywood;
+        font-weight: 500;
+    }
+
+}
+
