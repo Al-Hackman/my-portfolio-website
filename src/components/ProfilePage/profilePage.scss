@@ -3,27 +3,125 @@
 
 
 
+@mixin fadeText($text-color, $direction : top, $offset : 2em, $transition: 0.5s ease-out) {  
+  // text-color : dark
+  $color: #fff;
+
+  // direction : top
+  $deg: 180deg;
+  $pos: bottom;
+  
+  @if($text-color == 'light') {
+    $color: #000;
+    mix-blend-mode: screen;
+  } @else {
+    mix-blend-mode: multiply;
+  }
+  
+  @if($direction == 'left') {
+    $deg: 90deg;
+    $pos: right;
+  } @elseif ($direction == 'right') {
+    $deg: -90deg;
+    $pos: left;
+  } @elseif ($direction == 'bottom') {
+    $deg: 0deg;
+    $pos: top;
+  }
+  
+  position: relative;
+
+  &::after {
+    background: linear-gradient($deg, transparent, $color $offset) no-repeat $pos center / 100% 100%;
+    
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    pointer-events: none;
+    transition: $transition;
+  }
+  
+  &:hover::after {
+    @if($direction == 'left' or $direction == 'right') {
+      background-size: 0% 100%;  
+    } @else {
+      background-size: 100% 0%;
+    }
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
 .profile{
-    padding: 6rem 2rem 0px;
+    padding: 3rem 2rem 0px;
     
     &__header{
         color: $secondary;
         font-weight: 600;
         font-size: 40px;
-        margin: 0px 0px 3rem;
-        letter-spacing: 1.2px;
+        margin: 0px 0px 1rem;
+        letter-spacing: 1.5px;
     }
     &__body{
         color: $secondary;
         font-weight: 300;
-        margin: 0px;
+        margin: 0px 0px 2.5rem;
         letter-spacing: 1.2px;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     &--description{
         color: burlywood;
         font-weight: 500;
     }
+    &__education{
+        color: $secondary;
+        font-weight: 600;
+        font-size: 1.5rem;
+        letter-spacing: 1.2px;
+        text-decoration: underline;
+    }
+    &__school{
+        color: $secondary;
+        font-weight: 300;
+        font-size: 1rem;
+        letter-spacing: 1.2px;
+    }
+    &__cert{
+        color: burlywood;
+    }
+    &__content{
+        color: #fff;
+        @supports(mix-blend-mode: screen){
+        @include fadeText(light, top, 3rem);
+        } 
+    }
+    &__wrapper{
+        // background: #222 url(https://source.unsplash.com/yNGQ830uFB4/1600x900) 50% 50% / cover;
+        // display: flex;
+        // align-items: center;
+        // font: 18px/1.5 'Roboto', sans-serif;
+        // justify-content: center;
+        // min-height: 100vh;
+        position: relative;
+  
+        &::before {
+        // background: #222;
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        opacity: 0.5;
+        }
+    }
 
 }
+
 

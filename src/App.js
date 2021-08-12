@@ -3,6 +3,7 @@ import './styles/global.scss';
 import { Switch, Route } from "react-router-dom";
 import MainPage from './components/MainPage/MainPage';
 import ProfilePage from './components/ProfilePage/ProfilePage';
+import ProjectsPage from './components/ProjectsPage/ProjectsPage';
 
 
 
@@ -21,6 +22,10 @@ function App() {
 
           <Route path="/profile">
             <ProfilePage/>
+          </Route>
+
+          <Route path="/projects">
+            <ProjectsPage/>
           </Route>
 
 

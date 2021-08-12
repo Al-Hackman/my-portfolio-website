@@ -1,0 +1,33 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+
+.projects{
+    height: 100vh;
+
+    &__num1{
+        background-color: grey;
+    }
+    &__num2{
+        background-color: cadetblue;  
+    }
+    &__details{
+        height: 50%;
+        padding: 2rem 2rem;
+
+    }
+    &__title{
+        margin: 0px;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+    }
+    &__content{
+        margin: 10px 0px;
+        font-family: 300;
+        letter-spacing: 1px;
+    }
+}
+
+
+

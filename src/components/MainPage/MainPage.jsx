@@ -16,7 +16,7 @@ function MainPage() {
             </section> 
 
             <section className="main-page__middle">
-                <div className="main-page__menu">ABOUT</div>
+                <div className="main-page__menu">PROFILE</div>
                 <div className="main-page__divider"></div>
                 <div className="main-page__menu">PROJECTS</div>
                 <div className="main-page__divider"></div>
