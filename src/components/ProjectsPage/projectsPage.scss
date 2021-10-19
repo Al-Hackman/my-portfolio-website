@@ -12,20 +12,36 @@
         background-color: cadetblue;  
     }
     &__details{
-        height: 50%;
+        // height: 50%;
         padding: 2rem 2rem;
+        margin: 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 1px 1px 3rem 1rem #000;
+        background-color: white;
 
     }
     &__title{
+        color: burlywood;
         margin: 0px;
         font-size: 20px;
         font-weight: 600;
-        letter-spacing: 1.2px;
+        letter-spacing: 1.5px;
+    }
+    &__title-underline{
+        width: 50px;
+        height: 2px;
+        background-color: rgb(247, 215, 175);
+        display: block;
     }
     &__content{
         margin: 10px 0px;
         font-family: 300;
         letter-spacing: 1px;
+    }
+    &__icons{
+        width: 30px;
+        height: 30px;
+        margin: 5px;
     }
 }
 

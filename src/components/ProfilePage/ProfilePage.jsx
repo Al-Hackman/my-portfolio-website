@@ -1,6 +1,8 @@
-import React from 'react'
-import ProfileBackground from '../../ProfileBackground'
-import './profilePage.scss'
+import React from 'react';
+import {Link} from 'react-router-dom';
+import ProfileBackground from '../../ProfileBackground';
+import './profilePage.scss';
+import logo from '../../assets/logo/logo.png';
 
 
 
@@ -12,6 +14,7 @@ function ProfilePage() {
 
             <section className="profile">
 
+                <Link to="/" className="profile__logo"> <img src={logo} className="profile__logo-img" alt="Portfolio Logo" /> </Link>
                 <h1 className="profile__header">Hi, I'm Albert.</h1>
                 <div className="profile__content">
                     <h3 className="profile__body">A passionate <span className="profile--description">Web Developer</span> with experience in 

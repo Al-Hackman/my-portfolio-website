@@ -3,9 +3,20 @@
 
 
 .main-page{
-
+    box-sizing: border-box;
+    
+    &__logo-wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0px 0px;
+    }
+    &__logo{
+        width: 150px;
+        border-radius: 50%;
+    }
     &__top{
-        height: 25vh;
+        height: 20vh;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -13,7 +24,7 @@
         justify-content: center;
     }
     &__middle{
-        height: 50vh;
+        height: 40vh;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -21,7 +32,7 @@
         justify-content: space-evenly;
     }
     &__bottom{
-        height: 25vh;
+        height: 15vh;
         width: 100%;
         display: flex;
         // flex-direction: column;
@@ -44,13 +55,17 @@
     }
     &__menu{
         color: $secondary;
+        text-decoration: none;
         @include header;
     }
     &__divider{
         background-color: burlywood;
         height: 1px;
-        margin: auto 0px;
+        // margin: auto 0px;
         width: 80%;
+    }
+    &__divid{
+        margin-bottom: 0px;
     }
     &__contact{
         color: burlywood;

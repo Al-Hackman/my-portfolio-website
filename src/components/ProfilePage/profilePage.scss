@@ -62,8 +62,18 @@
 
 
 .profile{
-    padding: 3rem 2rem 0px;
+    padding: 2rem 2rem 0px;
+
+    &__logo{
+      // height: 10vh;
+      width: 1rem;
+      height: 1rem;
+    }
     
+    &__logo-img{
+      width: 100%;
+      // margin-bottom: 1.5rem;
+    }
     &__header{
         color: $secondary;
         font-weight: 600;
