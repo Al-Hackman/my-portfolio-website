@@ -4,19 +4,24 @@
 
 .main-page{
     box-sizing: border-box;
+    height: 100vh;
     
     &__logo-wrap{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 30px 0px 0px;
+        padding: 30px 0px 0px;
+        height: 30vh;
     }
     &__logo{
         width: 150px;
         border-radius: 50%;
     }
+    &__content{
+        height: 70vh;
+    }
     &__top{
-        height: 20vh;
+        height: 50%;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -24,15 +29,15 @@
         justify-content: center;
     }
     &__middle{
-        height: 40vh;
+        height: 35%;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     &__bottom{
-        height: 15vh;
+        height: 15%;
         width: 100%;
         display: flex;
         // flex-direction: column;
@@ -43,8 +48,11 @@
         color: $secondary;
         text-shadow: 1px 0px 1px;
         letter-spacing: 1.5px;
-        margin-bottom: 10px;
+        // margin-bottom: 10px;
         font-size: 12px;
+        height: 10%;
+        display: flex;
+        align-items: center;
     
     }
     &__title{
@@ -52,11 +60,26 @@
         text-shadow: 1px 0px 1px;
         letter-spacing: 2px;
         font-size: 19px;
+        height: 20%;
+        display: flex;
+        align-items: flex-start;
+        // padding: 8px 0px 0px;
+    }
+    &__about{
+        color: white;
+        padding: 0px 2rem 0px;
+        // text-align: justify;
+        letter-spacing: 2px;
+        margin: 0px;
+        height: 60%;
+        display: flex;
+        align-items: flex-start;
     }
     &__menu{
         color: $secondary;
         text-decoration: none;
         @include header;
+        letter-spacing: 0.3rem;
     }
     &__divider{
         background-color: burlywood;
@@ -72,6 +95,94 @@
         font-size: 12px;
         letter-spacing: 2px;
         text-decoration: none;
+    }
+    &__links{
+        width: 30px;
+        height: 30px;
+    }
+
+
+    @include tablet-up{
+
+        &__about{
+            width:80%;
+            padding: 0px;
+            font-size: 1.1rem;
+        }
+        &__bottom{
+            width: 70%;
+            margin: 0px auto;
+        }
+
+    }
+
+    @include laptop-up{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 11.25rem;
+
+        &__logo-wrap{
+            width: 50%;
+            margin: 0px;
+            justify-content: right;
+        }
+        &__logo{
+            width: 18rem;
+        }
+        &__content{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            
+        }
+        &__top{
+            align-items: flex-start;
+        }
+        &__name{
+            font-size: 2.25rem;
+            line-height: 1.125;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.2em;
+        }
+        &__title{
+            font-size: 0.75rem;
+            letter-spacing: 0.5em;
+            align-items: center;
+        }
+        &__about{
+            width: 100%;
+        }
+        &__underline{
+            width: 80px;
+            height: 2px;
+            background-color:#f37272;
+            display: block;
+            margin: 30px 0px;
+        }
+        &__middle{
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            border-top: 1px solid burlywood;
+            border-bottom: 1px solid burlywood;
+            height: 20%;
+        }
+        &__divider{
+            display: none;
+        }
+        &__bottom{
+            justify-content: space-around;
+        }
+        &__contact{
+            margin-right: 20px;
+        }
+
     }
 
 

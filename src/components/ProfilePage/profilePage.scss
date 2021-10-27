@@ -3,75 +3,77 @@
 
 
 
-@mixin fadeText($text-color, $direction : top, $offset : 2em, $transition: 0.5s ease-out) {  
-  // text-color : dark
-  $color: #fff;
+// @mixin fadeText($text-color, $direction : top, $offset : 2em, $transition: 0.5s ease-out) {  
+//   // text-color : dark
+//   $color: #fff;
 
-  // direction : top
-  $deg: 180deg;
-  $pos: bottom;
+//   // direction : top
+//   $deg: 180deg;
+//   $pos: bottom;
   
-  @if($text-color == 'light') {
-    $color: #000;
-    mix-blend-mode: screen;
-  } @else {
-    mix-blend-mode: multiply;
-  }
+//   @if($text-color == 'light') {
+//     $color: #000;
+//     mix-blend-mode: screen;
+//   } @else {
+//     mix-blend-mode: multiply;
+//   }
   
-  @if($direction == 'left') {
-    $deg: 90deg;
-    $pos: right;
-  } @elseif ($direction == 'right') {
-    $deg: -90deg;
-    $pos: left;
-  } @elseif ($direction == 'bottom') {
-    $deg: 0deg;
-    $pos: top;
-  }
+//   @if($direction == 'left') {
+//     $deg: 90deg;
+//     $pos: right;
+//   } @elseif ($direction == 'right') {
+//     $deg: -90deg;
+//     $pos: left;
+//   } @elseif ($direction == 'bottom') {
+//     $deg: 0deg;
+//     $pos: top;
+//   }
   
-  position: relative;
+//   position: relative;
 
-  &::after {
-    background: linear-gradient($deg, transparent, $color $offset) no-repeat $pos center / 100% 100%;
+//   &::after {
+//     background: linear-gradient($deg, transparent, $color $offset) no-repeat $pos center / 100% 100%;
     
-    content: '';
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    pointer-events: none;
-    transition: $transition;
-  }
+//     content: '';
+//     position: absolute;
+//     top: 0; right: 0; bottom: 0; left: 0;
+//     pointer-events: none;
+//     transition: $transition;
+//   }
   
-  &:hover::after {
-    @if($direction == 'left' or $direction == 'right') {
-      background-size: 0% 100%;  
-    } @else {
-      background-size: 100% 0%;
-    }
-  }
+//   &:hover::after {
+//     @if($direction == 'left' or $direction == 'right') {
+//       background-size: 0% 100%;  
+//     } @else {
+//       background-size: 100% 0%;
+//     }
+//   }
   
-}
-
-
-
-
-
-
-
-
-
+// }
 
 
 .profile{
-    padding: 2rem 2rem 0px;
+    padding: 0px 2rem 2rem;
 
+    &__backarrow{
+      margin-left: 1rem;
+    }
+    &__arrow{
+      width: 20px;
+      height: 20px;
+      margin: 1rem 0.7rem;
+
+      &:hover{
+            margin-left: -7px;
+        }
+    }
     &__logo{
-      // height: 10vh;
-      width: 1rem;
-      height: 1rem;
+      display: flex;
+      justify-content: center;
     }
     
     &__logo-img{
-      width: 100%;
+      width: 256px;
       // margin-bottom: 1.5rem;
     }
     &__header{
@@ -99,38 +101,67 @@
         letter-spacing: 1.2px;
         text-decoration: underline;
     }
+    &__skills{
+      color: $secondary;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      font-size: 1.5rem;
+      text-decoration: underline;
+      margin: 3rem 0px 1.2rem;
+    }
+    &__edu-wrap{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    &__check{
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
     &__school{
         color: $secondary;
         font-weight: 300;
         font-size: 1rem;
         letter-spacing: 1.2px;
+        margin: 0.5rem;
     }
     &__cert{
         color: burlywood;
     }
-    &__content{
-        color: #fff;
-        @supports(mix-blend-mode: screen){
-        @include fadeText(light, top, 3rem);
-        } 
-    }
-    &__wrapper{
-        // background: #222 url(https://source.unsplash.com/yNGQ830uFB4/1600x900) 50% 50% / cover;
-        // display: flex;
-        // align-items: center;
-        // font: 18px/1.5 'Roboto', sans-serif;
-        // justify-content: center;
-        // min-height: 100vh;
-        position: relative;
+    // &__content{
+    //     color: #fff;
+    //     @supports(mix-blend-mode: screen){
+    //     @include fadeText(light, top, 3rem);
+    //     } 
+    // }
+    // &__wrapper{
+    //     // background: #222 url(https://source.unsplash.com/yNGQ830uFB4/1600x900) 50% 50% / cover;
+    //     // display: flex;
+    //     // align-items: center;
+    //     // font: 18px/1.5 'Roboto', sans-serif;
+    //     // justify-content: center;
+    //     // min-height: 100vh;
+    //     position: relative;
   
-        &::before {
-        // background: #222;
-        content: '';
-        position: absolute;
-        top: 0; right: 0; bottom: 0; left: 0;
-        opacity: 0.5;
-        }
-    }
+    //     &::before {
+    //     // background: #222;
+    //     content: '';
+    //     position: absolute;
+    //     top: 0; right: 0; bottom: 0; left: 0;
+    //     opacity: 0.5;
+    //     }
+    // }
+
+      @include tablet-up{
+          padding: 1.8rem 4.8rem;
+
+      }
+
+      @include laptop-up{
+          padding: 0px 11.25rem;
+      }
+
 
 }
 
