@@ -22,7 +22,8 @@ function MainPage() {
                 <div className="main-page__name">ALBERT HACKMAN</div>
                 <div className="main-page__title">WEB DEVELOPER</div>
                 <span className="main-page__underline"></span>
-                <p className="main-page__about">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, asperiores laborum magnam consequatur omnis alias.</p>
+                <p className="main-page__about">Technology leads, society follows. Always exploring other technologies and frameworks 
+                that catch my interest! If you're looking for a developer to add to your team, I'd love to hear from you!</p>
             </section> 
 
             <section className="main-page__middle">
