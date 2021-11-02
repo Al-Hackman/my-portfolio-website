@@ -74,7 +74,13 @@
     
     &__logo-img{
       width: 256px;
-      // margin-bottom: 1.5rem;
+      
+      transition-property: transform;
+      transition-duration: 1s;
+
+      &:hover{
+        transform: rotateY(180deg);
+      }
     }
     &__header{
         color: $secondary;

@@ -16,6 +16,11 @@
     &__logo{
         width: 150px;
         border-radius: 50%;
+        opacity: 0;
+        animation-name: mylogo;
+        animation-duration: 3s;
+        animation-delay: 5s;
+        animation-fill-mode: forwards;
     }
     &__content{
         height: 70vh;
@@ -35,6 +40,12 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        opacity: 0;
+        animation-name: mymiddle;
+        animation-duration: 3s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+
     }
     &__bottom{
         height: 15%;
@@ -43,6 +54,11 @@
         // flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        opacity: 0;
+        animation-name: mybottom;
+        animation-duration: 3s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
     }
     &__name{
         color: $secondary;
@@ -53,6 +69,10 @@
         height: 10%;
         display: flex;
         align-items: center;
+        position: relative;
+        animation: myname;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
     
     }
     &__title{
@@ -64,6 +84,10 @@
         display: flex;
         align-items: flex-start;
         // padding: 8px 0px 0px;
+        position: relative;
+        animation: mytitle;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
     }
     &__about{
         color: white;
@@ -74,6 +98,10 @@
         height: 60%;
         display: flex;
         align-items: flex-start;
+        position: relative;
+        animation: myabout;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
     }
     &__menu{
         color: $secondary;
@@ -187,6 +215,37 @@
 
 
 }
+
+@keyframes myname{
+    0% {top: -50px;}
+    100% {top: 0;}
+}
+
+@keyframes mytitle{
+    0% {top: -50px;}
+    100% {top: 0;}
+}
+
+@keyframes myabout{
+    0% {left: -1000px;}
+    100% {left: 0;}
+}
+
+@keyframes mymiddle{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes mybottom{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes mylogo{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 
 
 
