@@ -3,69 +3,26 @@
 
 
 
-// @mixin fadeText($text-color, $direction : top, $offset : 2em, $transition: 0.5s ease-out) {  
-//   // text-color : dark
-//   $color: #fff;
-
-//   // direction : top
-//   $deg: 180deg;
-//   $pos: bottom;
-  
-//   @if($text-color == 'light') {
-//     $color: #000;
-//     mix-blend-mode: screen;
-//   } @else {
-//     mix-blend-mode: multiply;
-//   }
-  
-//   @if($direction == 'left') {
-//     $deg: 90deg;
-//     $pos: right;
-//   } @elseif ($direction == 'right') {
-//     $deg: -90deg;
-//     $pos: left;
-//   } @elseif ($direction == 'bottom') {
-//     $deg: 0deg;
-//     $pos: top;
-//   }
-  
-//   position: relative;
-
-//   &::after {
-//     background: linear-gradient($deg, transparent, $color $offset) no-repeat $pos center / 100% 100%;
-    
-//     content: '';
-//     position: absolute;
-//     top: 0; right: 0; bottom: 0; left: 0;
-//     pointer-events: none;
-//     transition: $transition;
-//   }
-  
-//   &:hover::after {
-//     @if($direction == 'left' or $direction == 'right') {
-//       background-size: 0% 100%;  
-//     } @else {
-//       background-size: 100% 0%;
-//     }
-//   }
-  
-// }
-
-
 .profile{
     padding: 0px 2rem 2rem;
 
     &__backarrow{
-      margin-left: 1rem;
+      padding-left: 1rem;
+    }
+
+    &__img-wrap{
+        margin-left: 10px;
+        cursor: pointer;
+
+        &:hover{
+            margin-left: -7px;
+            transition-duration: 1s;
+        }
     }
     &__arrow{
       width: 20px;
       height: 20px;
       margin: 1rem 0.7rem;
-
-      &:hover{
-            margin-left: -7px;
-        }
     }
     &__logo{
       display: flex;
@@ -74,7 +31,6 @@
     
     &__logo-img{
       width: 256px;
-      
       transition-property: transform;
       transition-duration: 1s;
 
@@ -119,6 +75,14 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
+
+      &:hover {
+          cursor: pointer;
+            .profile__check{
+                transform: rotateY(180deg);
+                transition-duration: 2s;
+              }
+         }
     }
     &__check{
       width: 20px;
@@ -135,29 +99,19 @@
     &__cert{
         color: burlywood;
     }
-    // &__content{
-    //     color: #fff;
-    //     @supports(mix-blend-mode: screen){
-    //     @include fadeText(light, top, 3rem);
-    //     } 
-    // }
-    // &__wrapper{
-    //     // background: #222 url(https://source.unsplash.com/yNGQ830uFB4/1600x900) 50% 50% / cover;
-    //     // display: flex;
-    //     // align-items: center;
-    //     // font: 18px/1.5 'Roboto', sans-serif;
-    //     // justify-content: center;
-    //     // min-height: 100vh;
-    //     position: relative;
-  
-    //     &::before {
-    //     // background: #222;
-    //     content: '';
-    //     position: absolute;
-    //     top: 0; right: 0; bottom: 0; left: 0;
-    //     opacity: 0.5;
-    //     }
-    // }
+
+    &__icons{
+        width: 2.5rem;
+        height: 30px;
+        margin: 5px 10px 5px 5px;
+
+        &:hover{
+            margin-bottom: -20px;
+            transition-duration: 2s;
+            cursor: pointer;
+        }
+    }
+    
 
       @include tablet-up{
           padding: 1.8rem 4.8rem;

@@ -8,6 +8,8 @@ import LinkedIn from '../../assets/images/linkedin.png';
 
 
 function MainPage() {
+
+    document.title = "Albert Hackman"
     return (
         <div className="main-page">
 
@@ -18,11 +20,10 @@ function MainPage() {
             <section className="main-page__content">
 
             <section className="main-page__top">
-                {/* <span>Good Website!!!</span>  */}
                 <div className="main-page__name">ALBERT HACKMAN</div>
                 <div className="main-page__title">WEB DEVELOPER</div>
                 <span className="main-page__underline"></span>
-                <p className="main-page__about">Technology leads, society follows. Always exploring other technologies and frameworks 
+                <p className="main-page__about">Technology leads, society follows. I'm always exploring other technologies and frameworks 
                 that catch my interest! If you're looking for a developer to add to your team, I'd love to hear from you!</p>
             </section> 
 
@@ -32,16 +33,11 @@ function MainPage() {
                 <div className="main-page__divider"></div>
                 <Link to="/projects" className="main-page__menu">PROJECTS</Link>
                 <div className="main-page__divider main-page__divid"></div>
-                {/* <Link to="#" className="main-page__menu">SKILLS</Link> */}
             </section>
 
             <section className="main-page__bottom"> 
-
                 <a href="https://github.com/Al-Hackman" target="_blank" title="Github"><img src={Github} alt="" className="main-page__links"/></a>
                 <a href="https://www.linkedin.com/in/alberthackman" target="_blank" title="LinkedIn Profile"><img src={LinkedIn} alt="" className="main-page__links"/></a>
-
-                {/* <a href="https://github.com/Al-Hackman" className="main-page__contact">GITHUB</a>
-                <a href="https://www.linkedin.com/in/alberthackman/" className="main-page__contact">LINKEDIN</a> */}
             </section>
 
             </section>

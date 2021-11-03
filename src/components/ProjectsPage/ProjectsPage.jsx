@@ -33,8 +33,7 @@ function ProjectsPage() {
                     seeks to help users find Artisans (i.e. Service Providers) for a quick fix in their households. 
                     Users are able to create account and manage their services accordingly.</p>
                     <span className="projects__title-underline"></span>
-                    {/* <span className="projects__title">Tech Stack</span> */}
-                    {/* <p className="projects__content">React, JavaScript, Firebase, HTML, SASS, CSS</p> */}
+                    
                     <img src={reactLogo} alt="" className="projects__icons"/>
                     <img src={JS} alt="" className="projects__icons"/>
                     <img src={HTML} alt="" className="projects__icons"/>
@@ -46,18 +45,15 @@ function ProjectsPage() {
                 <div className="projects__num2 projects__details">
                     <span className="projects__title">InStock</span>
                     <span className="projects__title-underline"></span>
-                    <p className="projects__content">This is a collaborative work with Charles, Heather and Peter. 
-                    A responsive Inventory Management System built specifically to suit the needs of a particular Company. 
-                    Details of the Inventory List, Warehouse List, and Items being stocked in particular Warehouse etc. 
-                    Users can see Inventory, Edit (Add or Update) Inventory as well as Warehouse, Delete Items etc.</p>
+                    <p className="projects__content">A responsive Inventory Management System built specifically to suit the needs of a particular Company. 
+                    Details of the Inventory List, Warehouse List, and Items being stocked in particular Warehouses etc. 
+                    Users can see Inventory, Edit (Add or Update) Inventory as well as Warehouse, Delete Items etc. This was a collaborative work with other team members in an Agile environment.</p>
                     <span className="projects__title-underline"></span>
-                    {/* <span className="projects__title">Tech Stack</span> */}
-                    {/* <p className="projects__content">Express.js, Axios, HTML, SASS, CSS, React, JavaScript, Node.js</p> */}
+                    
                     <img src={SASS} alt="" className="projects__icons"/>
                     <img src={HTML} alt="" className="projects__icons"/>
                     <img src={CSS} alt="" className="projects__icons"/>
                     <img src={NODE} alt="" className="projects__icons"/>
-                    {/* <img src={EXP} alt="" className="projects__icons"/> */}
                     <img src={AXIOS} alt="" className="projects__icons"/>
                     <img src={JS} alt="" className="projects__icons"/>
                     <img src={reactLogo} alt="" className="projects__icons"/>

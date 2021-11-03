@@ -28,13 +28,17 @@ function ProfilePage() {
     return (
         <div className="profile__wrapper">
             <ProfileBackground />
-             <div className="profile__backarrow"><img src={arrow} alt="" className="profile__arrow" onClick={() => history.goBack()}/></div>
+             <div className="profile__backarrow">
+                 <div className="profile__img-wrap">
+                    <img src={arrow} alt="" className="profile__arrow" onClick={() => history.goBack()}/>
+                 </div>
+            </div>
             <section className="profile">
                
                 <div className="profile__logo"><img src={logo} className="profile__logo-img" alt="Portfolio Logo" /></div>
                 <h1 className="profile__header">Hi, I'm Albert.</h1>
                 <div className="profile__content">
-                    
+
                     <h3 className="profile__body">A passionate <span className="profile--description">Web Developer</span> with experience in 
                     Enterprise Growth and Digital Transformations. My education in Computer Science 
                     only reaffirmed my passion for building high impact websites that maximize companies’ 
@@ -51,18 +55,18 @@ function ProfilePage() {
                     </div>
                     <div className="profile__edu-wrap">
                         <img src={Check} alt="" className="profile__check"/>
-                        <h3 className="profile__school"><span className="profile__cert">Masters in Economics Policy Management</span> - University of Ghana</h3>
+                        <h3 className="profile__school"><span className="profile__cert">Masters in Economics Policy Management(2014)</span> - University of Ghana</h3>
                     </div>
 
                     <h2 className="profile__skills">Skills</h2>
-                    <img src={SASS} alt="" className="projects__icons"/>
-                    <img src={HTML} alt="" className="projects__icons"/>
-                    <img src={CSS} alt="" className="projects__icons"/>
-                    <img src={NODE} alt="" className="projects__icons"/>
-                    <img src={AXIOS} alt="" className="projects__icons"/>
-                    <img src={JS} alt="" className="projects__icons"/>
-                    <img src={reactLogo} alt="" className="projects__icons"/>
-                    <img src={Github} alt="" className="projects__icons"/>
+                    <img src={SASS} alt="" className="profile__icons"/>
+                    <img src={HTML} alt="" className="profile__icons"/>
+                    <img src={CSS} alt="" className="profile__icons"/>
+                    <img src={NODE} alt="" className="profile__icons"/>
+                    <img src={AXIOS} alt="" className="profile__icons"/>
+                    <img src={JS} alt="" className="profile__icons"/>
+                    <img src={reactLogo} alt="" className="profile__icons"/>
+                    <img src={Github} alt="" className="profile__icons"/>
 
                 </div>
             </section>
