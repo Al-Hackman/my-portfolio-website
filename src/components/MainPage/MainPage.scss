@@ -131,9 +131,9 @@
 
         &:hover{
             cursor: pointer;
-            margin-bottom: -20px;
             transition-duration: 1s;
             opacity: 1;
+            transform: scale(1.5);
         }
     }
 

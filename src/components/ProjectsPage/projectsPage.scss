@@ -57,13 +57,14 @@
 
         &:hover {
             cursor: pointer;
+            transform: scale(1.06);
             
                 .projects__title{
                         font-size: 1.8rem;
                         transition-duration: 1s;
                     }
                 .projects__content{
-                        font-size: 1.2rem;
+                        // font-size: 1.2rem;
                         transition-duration: 1s;
                 }
         }
