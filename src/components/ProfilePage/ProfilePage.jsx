@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import ProfileBackground from '../../ProfileBackground';
 import './profilePage.scss';
 import logo from '../../assets/logo/logo.png';
@@ -59,15 +58,51 @@ function ProfilePage() {
                     </div>
 
                     <h2 className="profile__skills">Skills</h2>
-                    <img src={SASS} alt="" className="profile__icons"/>
-                    <img src={HTML} alt="" className="profile__icons"/>
-                    <img src={CSS} alt="" className="profile__icons"/>
-                    <img src={NODE} alt="" className="profile__icons"/>
-                    <img src={AXIOS} alt="" className="profile__icons"/>
-                    <img src={JS} alt="" className="profile__icons"/>
-                    <img src={reactLogo} alt="" className="profile__icons"/>
-                    <img src={Github} alt="" className="profile__icons"/>
 
+                    <div className="profile__icons-wrap">
+
+                        <div className="profile__icon-name-wrap">
+                            <img src={SASS} alt="" className="profile__icons"/>
+                            <span className="profile__icon-name">SASS</span>
+                        </div>
+                        <div className="profile__icon-name-wrap">
+                            <img src={HTML} alt="" className="profile__icons"/>
+                            <span className="profile__icon-name">HTML5</span>
+                        </div>
+                        <div className="profile__icon-name-wrap">
+                            <img src={CSS} alt="" className="profile__icons"/>
+                            <span className="profile__icon-name">CSS</span>
+                        </div>
+                        <div className="profile__icon-name-wrap">
+                            <img src={NODE} alt="" className="profile__icons"/>
+                            <span className="profile__icon-name">Node.js</span>
+                        </div>
+                        <div className="profile__icon-name-wrap">
+                            <img src={AXIOS} alt="" className="profile__icons"/>
+                            <span className="profile__icon-name">Axios</span>
+                        </div>
+                        <div className="profile__icon-name-wrap">
+                            <img src={JS} alt="" className="profile__icons"/>
+                            <span className="profile__icon-name">JavaScript</span>
+                        </div>
+                        <div className="profile__icon-name-wrap">
+                            <img src={reactLogo} alt="" className="profile__icons"/>
+                            <span className="profile__icon-name">React</span>
+                        </div>
+                        <div className="profile__icon-name-wrap">
+                            <img src={Github} alt="" className="profile__icons"/>
+                            <span className="profile__icon-name">Github</span>
+                        </div>
+                        <div className="profile__icon-name-wrap">
+                            <img src={FB} alt="" className="profile__icons"/>
+                            <span className="profile__icon-name">Firebase</span>
+                        </div>
+                        <div className="profile__icon-name-wrap">
+                            <img src={EXP} alt="" className="profile__icons"/>
+                            <span className="profile__icon-name">Express.js</span>
+                        </div>
+
+                    </div>
                 </div>
             </section>
 
