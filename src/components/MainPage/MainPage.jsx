@@ -21,7 +21,7 @@ function MainPage() {
 
             <section className="main-page__top">
                 <div className="main-page__name">ALBERT HACKMAN</div>
-                <div className="main-page__title">WEB DEVELOPER</div>
+                <div className="main-page__title">Full Stack Developer</div>
                 <span className="main-page__underline"></span>
                 <p className="main-page__about">Technology leads, society follows. I'm always exploring other technologies and frameworks 
                 that catch my interest! If you're looking for a developer to add to your team, I'd love to hear from you!</p>
